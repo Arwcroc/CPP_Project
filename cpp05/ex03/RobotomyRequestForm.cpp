@@ -6,7 +6,7 @@
 /*   By: tefroiss <tefroiss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 14:18:18 by tefroiss          #+#    #+#             */
-/*   Updated: 2022/01/18 17:47:07 by tefroiss         ###   ########.fr       */
+/*   Updated: 2022/01/21 14:33:39 by tefroiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ void RobotomyRequestForm::execute(Bureaucrat const & src) const
 	else if (!this->getGradeSign())
 		throw GradeTooLowException("Impossible to get the grade required to sign the form.");
 
-	int n = std::rand()%10 + 1;
+	int n = std::rand() % 9 + 1;
 
 	if (n <= 5)
 	{

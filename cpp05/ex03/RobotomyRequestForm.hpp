@@ -6,7 +6,7 @@
 /*   By: tefroiss <tefroiss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 14:18:20 by tefroiss          #+#    #+#             */
-/*   Updated: 2022/01/05 19:40:58 by tefroiss         ###   ########.fr       */
+/*   Updated: 2022/01/21 14:53:33 by tefroiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 #define ROBOTOMYREQUESTFORM_HPP
 
 #include "ShrubberyCreationForm.hpp"
-#include <random>
+#include <cstdlib>
 
 class RobotomyRequestForm : public Form
 {
