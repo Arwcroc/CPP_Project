@@ -6,7 +6,7 @@
 /*   By: tefroiss <tefroiss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 14:18:15 by tefroiss          #+#    #+#             */
-/*   Updated: 2022/01/05 19:40:56 by tefroiss         ###   ########.fr       */
+/*   Updated: 2022/01/21 17:04:05 by tefroiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ class PresidentialPardonForm : public Form
 		PresidentialPardonForm(std::string name_target);
 		PresidentialPardonForm(std::string const Name, bool Signed, int const gr_exec, int const gr_sign);
 		PresidentialPardonForm(PresidentialPardonForm const & src);
-		~PresidentialPardonForm();
+		virtual ~PresidentialPardonForm();
 
 		PresidentialPardonForm & operator=(PresidentialPardonForm const & src);
 		

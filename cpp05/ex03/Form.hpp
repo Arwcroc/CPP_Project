@@ -6,7 +6,7 @@
 /*   By: tefroiss <tefroiss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/25 16:32:48 by tefroiss          #+#    #+#             */
-/*   Updated: 2022/01/17 11:32:38 by tefroiss         ###   ########.fr       */
+/*   Updated: 2022/01/21 17:02:26 by tefroiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ class Form
 	public:
 		Form();
 		Form(std::string const Name, bool Signed, int const gr_exec, int const gr_sign);
-		~Form();
+		virtual ~Form();
 
 		std::string getName() const;
 		int getGradeSign() const;

@@ -6,7 +6,7 @@
 /*   By: tefroiss <tefroiss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 14:18:20 by tefroiss          #+#    #+#             */
-/*   Updated: 2022/01/21 14:53:33 by tefroiss         ###   ########.fr       */
+/*   Updated: 2022/01/21 17:04:22 by tefroiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ class RobotomyRequestForm : public Form
 		RobotomyRequestForm(std::string name_target);
 		RobotomyRequestForm(std::string const Name, bool Signed, int const gr_exec, int const gr_sign);
 		RobotomyRequestForm(RobotomyRequestForm const & src);
-		~RobotomyRequestForm();
+		virtual ~RobotomyRequestForm();
 
 		RobotomyRequestForm & operator=(RobotomyRequestForm const & src);
 		

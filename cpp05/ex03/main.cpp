@@ -6,7 +6,7 @@
 /*   By: tefroiss <tefroiss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/24 17:28:31 by tefroiss          #+#    #+#             */
-/*   Updated: 2022/01/17 11:49:10 by tefroiss         ###   ########.fr       */
+/*   Updated: 2022/01/21 17:06:46 by tefroiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,7 +32,8 @@ void test2()
 	{
 		Intern billy;
 		Form *n_form = billy.makeform("Presidential Pardon", "Joker");
-		std::cout << n_form << std::endl;
+		std::cout << *n_form << std::endl;
+		delete n_form;
 	}
 	catch(std::exception &exc)
 	{
@@ -46,7 +47,8 @@ void test3()
 	{
 		Intern billy;
 		Form *n_form = billy.makeform("Robotomy Request", "Blender");
-		std::cout << n_form << std::endl;
+		std::cout << *n_form << std::endl;
+		delete n_form;
 	}
 	catch(std::exception &exc)
 	{
@@ -59,8 +61,9 @@ void test4()
 	try
 	{
 		Intern billy;
-		Form *n_form = billy.makeform("Shrubbery Creation", "Ni");
-		std::cout << n_form << std::endl;
+		Form *n_form = billy.makeform("Shrubbery Creation", "Arbre Mort");
+		std::cout << *n_form << std::endl;
+		delete n_form;
 	}
 	catch(std::exception &exc)
 	{

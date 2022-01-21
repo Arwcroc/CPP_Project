@@ -6,7 +6,7 @@
 /*   By: tefroiss <tefroiss@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/11/26 14:18:26 by tefroiss          #+#    #+#             */
-/*   Updated: 2022/01/05 19:40:59 by tefroiss         ###   ########.fr       */
+/*   Updated: 2022/01/21 17:04:28 by tefroiss         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ class ShrubberyCreationForm : public Form
 		ShrubberyCreationForm(std::string const Name);
 		ShrubberyCreationForm(std::string const Name, bool Signed, int const gr_exec, int const gr_sign);
 		ShrubberyCreationForm(ShrubberyCreationForm const & src);
-		~ShrubberyCreationForm();
+		virtual ~ShrubberyCreationForm();
 
 		ShrubberyCreationForm & operator=(ShrubberyCreationForm const & src);
 		
