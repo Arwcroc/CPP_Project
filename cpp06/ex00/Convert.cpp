@@ -137,7 +137,7 @@ int is_valid(std::string input)
 		}
 	}
 	j = 0;
-	if (input.size() > 1 && !isdigit(input[input.size() - 1]) && input[input.size() - 1] != 'f')
+	if (input.size() > 1 && input[input.size() - 1] != 'f')
 	{
 		for (unsigned int i = 0; i < input.size(); i++)
 		{
